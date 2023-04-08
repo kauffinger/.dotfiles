@@ -100,10 +100,10 @@ source $ZSH/oh-my-zsh.sh
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/git/bin:/Users/Konsti2/.config/composer/vendor/bin
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/git/bin:/Users/Konsti2/.config/composer/vendor/bin:/Users/Konsti2/.composer/vendor/bin:/opt/homebrew/bin
 export PATH="/usr/local/sbin:/Users/Konsti2/.cargo/bin:$PATH"
 
+source ~/.zsh_profile
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
