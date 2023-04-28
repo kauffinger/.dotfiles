@@ -121,3 +121,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
