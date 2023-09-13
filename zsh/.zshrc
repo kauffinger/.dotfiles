@@ -134,3 +134,26 @@ export HERD_PHP_82_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd
 
 # Herd injected PHP 7.4 configuration.
 export HERD_PHP_74_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/74/"
+
+
+# Herd injected PHP 8.1 configuration.
+export HERD_PHP_81_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/81/"
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP 8.0 configuration.
+export HERD_PHP_80_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/80/"
+
+# bun completions
+[ -s "/Users/Konsti2/.bun/_bun" ] && source "/Users/Konsti2/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
