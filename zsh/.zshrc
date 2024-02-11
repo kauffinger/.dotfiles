@@ -97,7 +97,22 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias zshrc='nvim ~/.zshrc'
+
+# Laravel
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias a='php artisan'
+alias phpstan='vendor/bin/phpstan --memory-limit=1G'
+alias pint='vendor/bin/pint'
+
+# show me the hidden files
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+#ssh
+alias sshkey="cat ~/.ssh/id_rsa.pub"
+alias sshconfig="nvim ~/.ssh/config"
+alias copysshkey='command cat ~/.ssh/id_rsa.public | pbcopy'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/git/bin:/Users/Konsti2/.config/composer/vendor/bin:/Users/Konsti2/.composer/vendor/bin
