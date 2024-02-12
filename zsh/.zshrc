@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Konsti2/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,8 +115,8 @@ alias sshconfig="nvim ~/.ssh/config"
 alias copysshkey='command cat ~/.ssh/id_rsa.public | pbcopy'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/git/bin:/Users/Konsti2/.config/composer/vendor/bin:/Users/Konsti2/.composer/vendor/bin
-export PATH="/usr/local/sbin:/Users/Konsti2/.cargo/bin:$PATH"
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/git/bin:$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin
+export PATH="/usr/local/sbin:$HOME/.cargo/bin:$PATH"
 
 source ~/.zsh_profile
 
@@ -140,30 +140,30 @@ eval "$(zoxide init zsh)"
 
 
 # Herd injected PHP binary.
-export PATH="/Users/Konsti2/Library/Application Support/Herd/bin/":$PATH
+export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
 
 
 # Herd injected PHP 8.2 configuration.
-export HERD_PHP_82_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/82/"
+export HERD_PHP_82_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/82/"
 
 
 # Herd injected PHP 7.4 configuration.
-export HERD_PHP_74_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/74/"
+export HERD_PHP_74_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/74/"
 
 
 # Herd injected PHP 8.1 configuration.
-export HERD_PHP_81_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/81/"
+export HERD_PHP_81_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/81/"
 
 
 # Herd injected PHP 8.3 configuration.
-export HERD_PHP_83_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/83/"
+export HERD_PHP_83_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/83/"
 
 
 # Herd injected PHP 8.0 configuration.
-export HERD_PHP_80_INI_SCAN_DIR="/Users/Konsti2/Library/Application Support/Herd/config/php/80/"
+export HERD_PHP_80_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/80/"
 
 # bun completions
-[ -s "/Users/Konsti2/.bun/_bun" ] && source "/Users/Konsti2/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
