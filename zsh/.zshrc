@@ -104,6 +104,7 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias a='php artisan'
 alias phpstan='vendor/bin/phpstan --memory-limit=1G'
 alias pint='vendor/bin/pint'
+alias pest='vendor/bin/pest'
 
 # show me the hidden files
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
