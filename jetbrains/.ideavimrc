@@ -192,8 +192,10 @@ nmap gI <Action>(QuickImplementations)
 nmap gn <Action>(ShowNavBar)
 
 " terminal
+" to close the terminal, fist go back to the editor using ESC, then use leader ct
 nmap <C-/> <Action>(ActivateTerminalToolWindow)
 "nmap <leader><C-/> <Action>(Terminal.OpenInTerminal)
+nmap <leader>ct :action HideActiveWindow<CR>
 
 " bookmark
 nmap mm <Action>(ToggleBookmark)
