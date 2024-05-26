@@ -1,4 +1,4 @@
-"set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
+set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
 set relativenumber number
 
 let mapleader = " "
