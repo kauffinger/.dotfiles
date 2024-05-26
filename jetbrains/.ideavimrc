@@ -114,9 +114,10 @@ nmap <leader>qd <Action>(QuickDefinition)
 nmap <leader>qD <Action>(QuickTypeDefinition)
 
 " code
-map <leader>c <Action>(CommentByLineComment)
-map <leader>C <Action>(CommentByBlockComment)
-nmap <leader>qf <Action>(ShowIntentionActions)
+vmap gc <Action>(CommentByLineComment)
+vmap gC <Action>(CommentByBlockComment)
+" lightbulb menu
+nmap <leader>lb <Action>(ShowIntentionActions)
 nmap <leader>se <Action>(ShowErrorDescription)
 nmap <leader>om <Action>(OverrideMethods)
 nmap <leader>im <Action>(ImplementMethods)
