@@ -88,6 +88,25 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# Composer local repositories setup
+# EX: composerLocal short-url "~/www/package-dev/packages/short-url"
+# EX: composerLocal packages ~/packages/\*
+function composerLocal() {
+    URL="${2:-./packages/${1}}"
+ 
+    composer config repositories."$1" '{"type": "path", "url": "'"${URL}"'", "options": {"symlink": true}}' --file composer.json
+}
+ 
+# EX: composerRemote short-url / will unset the repository
+function composerRemote() {
+    composer config repositories."$1" --unset
+}
+ 
+# EX: composerVcs short-url git@github.com:Sammyjo20/short-url.git
+function composerVcs() {
+    composer config repositories."$1" '{"type": "vcs", "url": "'"${2}"'"}' --file composer.json
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
