@@ -124,6 +124,7 @@ alias a='php artisan'
 alias phpstan='vendor/bin/phpstan --memory-limit=1G'
 alias pint='vendor/bin/pint'
 alias pest='vendor/bin/pest'
+alias pestmem='php -d memory_limit=512M vendor/bin/pest'
 
 # show me the hidden files
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
