@@ -136,6 +136,10 @@ alias sshconfig="nvim ~/.ssh/config"
 alias copysshkey='command cat ~/.ssh/id_rsa.public | pbcopy'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/git/bin:$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin
 export PATH="/usr/local/sbin:$HOME/.cargo/bin:$PATH"
 
