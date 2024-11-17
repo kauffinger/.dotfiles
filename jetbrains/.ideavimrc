@@ -1,4 +1,6 @@
 set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
+source ~/.idea-lazy.vim
+
 set relativenumber number
 
 let mapleader = " "
