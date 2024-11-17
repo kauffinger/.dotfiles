@@ -1,2 +1,4 @@
 bin/.local/share/*
 bin/.local/state/*
+bin/.local/pipx/*
+bin/.local/bin/langflow
