@@ -5,7 +5,7 @@ local config = wezterm.config_builder()
 config.color_scheme = "Catppuccin Mocha"
 
 config.font = wezterm.font("MonoLisa Nerd Font Mono", { weight = "Bold" })
-config.font_size = 12
+config.font_size = 13
 config.freetype_load_flags = "NO_HINTING"
 config.front_end = "OpenGL"
 config.freetype_load_target = "Light"
