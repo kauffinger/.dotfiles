@@ -186,7 +186,7 @@ nmap <leader>fT <Action>(ActivateTerminalToolWindow)
 " Terminal (Root Dir)
 " nmap <C-/><C-w> <Action>(ActivateTerminalToolWindow)
 " Hide Terminal
-nmap <C-_> <Action>(ActivateTerminalToolWindow)
+nmap <C-/> <Action>(ActivateTerminalToolWindow)
 " Split Window Below.  :split<cr> doesn't work.
 nmap <leader>- <c-w>s
 " Split Window Right
