@@ -174,7 +174,7 @@ nmap <leader>gL <Action>(Vcs.Show.Log)
 " Quit All
 nmap <leader>qq <Action>(Exit)
 " Inspect Pos
-nmap <leader>ui <Actrion>(FindUsages)
+nmap <leader>ui <Action>(FindUsages)
 " Inspect Tree
 nmap <leader>uI <Action>(ActivateStructureToolWindow)
 " LazyVim Changelog
