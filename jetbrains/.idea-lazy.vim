@@ -228,7 +228,7 @@ nmap gD <Action>(GotoDeclaration)
 " Signature Help
 nmap gK <Action>(ParameterInfo)
 " Signature Help in Insert Mode
-imap <C-k> <C-o><Action>(ParameterInfo)
+imap <C-k> <Action>(ParameterInfo)
 " Code Action
 nmap <leader>ca <Action>(RefactoringMenu)
 vmap <leader>ca <Action>(RefactoringMenu)
