@@ -108,7 +108,7 @@ nmap gcO kgccj
 " Lazy
 nmap <leader>l <Action>(WelcomeScreen.Plugins)
 " New File
-nmap <leader>fn Action(NewElementSamePlace)
+nmap <leader>fn <Action>(NewElementSamePlace)
 " Location List
 nmap <leader>xl <Action>(ActivateProblemsViewToolWindow)
 " Quickfix List
