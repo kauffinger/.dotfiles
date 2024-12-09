@@ -262,6 +262,9 @@ nmap <leader>bp <Action>(PinActiveTabToggle)
 nmap <leader>bP <Action>(CloseAllUnpinnedEditors)
 " Delete buffers to the right
 nmap <leader>br <Action>(CloseAllToTheRight)
+" Close All Editors But Active
+nmap <leader>bo <Action>(CloseAllEditorsButActive)
+
 
 " Neo-tree Keymaps
 
@@ -289,8 +292,8 @@ nmap <leader>un <Action>(ClearAllNotifications)
 nmap <leader><space> <Action>(GotoFile)
 " Switch Buffer
 nmap <leader>, <Action>(Switcher)
-" Grep (Root Dir)
-nmap <leader>/ <Action>(FindInPath)
+" Open Terminal
+nnoremap <leader>/ :action ActivateTerminalToolWindow<CR> 
 " Command History
 nmap <leader>: :history<cr>
 " Buffers
@@ -405,7 +408,7 @@ nmap <leader>dw :echo 'There is no equivalent mapping for Widgets.'<cr>
 " Todo-comments Keymaps
 
 " Todo
-nmap <leader>st oTODO<esc>gcc
+nmap <leader>st TODO:<esc>gcc
 " Todo/Fix/Fixme
 nmap <leader>sT :echo 'Not yet implemented.'<cr>
 " Todo (Trouble)

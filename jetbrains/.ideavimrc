@@ -1,88 +1,31 @@
 set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
 source ~/.idea-lazy.vim
 
-set relativenumber number
-
-let mapleader = " "
-nnoremap <leader><leader> :action GotoFile<CR>
-nnoremap <leader>/ :action ActivateTerminalToolWindow<CR>
-nnoremap H :action PreviousTab<CR>
-nnoremap L :action NextTab<CR>
-
-" make Y behave like D and C, yanking till end of line
-map Y y$
-
 " vim settings
-set scrolloff=5
 set history=1000
 
 " status bar
 set showmode
 
-" leader
-map <space> <nop>
-let mapleader="\<space>"
-
-" find and replace
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set gdefault
-nmap <leader>nh :noh<CR>
-
-" ideavim settings
+" ideavim settings (unique to IdeaVim)
 set ideajoin
 set ideamarks
 set idearefactormode=normal
 set ideastatusicon=gray
 
-" better HJKL
-"map H ^
-"map L $
-"map J }
-"map K {
-
 " location
 nmap <C-i> <Action>(Back)
 nmap <C-o> <Action>(Forward)
-
-" buffer (buffer < window < tab)
-nmap <leader>bd <Action>(CloseContent)
-nmap <leader>ba <Action>(CloseAllEditors)
-nmap <leader>bo <Action>(CloseAllEditorsButActive)
-nmap <leader>bP <Action>(CloseAllUnpinnedEditors)
-
-" window
-"nmap <C-Tab> <Action>(PreviousTab) " currently not useable due to keymap
-"nmap <Tab> <Action>(NextTab)
-nmap <leader>bp <Action>(PinActiveEditorTab)
-
-" tab
-"map <leader>sh <Action>(MoveTabLeft)
-"map <leader>sj <Action>(MoveTabDown)
-"map <leader>sk <Action>(MoveTabUp)
-"map <leader>sl <Action>(MoveTabRight)
-map <leader>sH <Action>(SplitHorizontally)
-map <leader>sV <Action>(SplitVertically)
-
-nmap <C-p> <Action>(JumpToLastWindow)
-nmap <M-i> <Action>(PrevSplitter)
-nmap <M-o> <Action>(NextSplitter)
-nmap <C-k> <C-w>k
-nmap <C-j> <C-w>j
-nmap <C-h> <C-w>h
-nmap <C-l> <C-w>l
 
 nmap <leader>ww <Action>(HideAllWindows)
 nmap <leader>wk <Action>(StretchSplitToTop)
 nmap <leader>wj <Action>(StretchSplitToBottom)
 nmap <leader>wh <Action>(StretchSplitToLeft)
 nmap <leader>wl <Action>(StretchSplitToRight)
-nmap <leader>wm <Action>(MaximizeEditorInSplit)
+nmap <leader>wm <Action>(MaximizeEditorInSplit)  " overrides lazy.vim's toggle maximize
 nmap <leader>wu <Action>(UnsplitAll)
 
-" menu
+" menu (unique mappings)
 nmap <leader>mm <Action>(MainMenu)
 nmap <leader>ma <Action>(AnalyzeMenu)
 nmap <leader>mb <Action>(BuildMenu)
@@ -96,19 +39,19 @@ nmap <leader>mw <Action>(ToolWindowsGroup)
 " file
 nmap <leader>of <Action>(OpenFile)
 nmap <leader>yp <Action>(CopyAbsolutePath)
-nmap <leader>. <Action>(RecentFiles)
+nmap <leader>. <Action>(NewScratchBuffer)
 nmap <leader>rl <Action>(RecentLocations)
-nmap <leader>rp <Action>(ManageRecentProjects) " seems overwritten
+nmap <leader>rp <Action>(ManageRecentProjects)
 "nmap <leader>sh <Action>(LocalHistory.ShowHistory)
 nmap <leader>sf <Action>(ShowFilePath)
 nmap <leader>si <Action>(SelectIn)
-"nmap <leader>fp <Action>(FindInPath) " more like find in files
+"nmap <leader>fp <Action>(FindInPath)
 "nmap <leader>rp <Action>(ReplaceInPath)
-"nmap <leader>sw <Action>($SearchWeb) " overwritten by surround with
+"nmap <leader>sw <Action>($SearchWeb)
 
-" tag
-nmap <leader>fu <Action>(FindUsages)
-nmap <leader>fs <Action>(FileStructurePopup)
+" tag (unique mappings)
+nmap <leader>fu <Action>(FindUsages)  " overrides lazy.vim's find usages mapping
+nmap <leader>fs <Action>(FileStructurePopup)  " overrides lazy.vim's source action mapping
 nmap <leader>su <Action>(ShowUsages)
 nmap <leader>hl <Action>(HighlightUsagesInFile)
 nmap <leader>qp <Action>(QuickPreview)
@@ -136,19 +79,13 @@ nmap <leader>trr <Action>(Rerun)
 nmap <leader>tr <Action>(RunTests)
 nmap <leader>ts <Action>(Stop)
 
-" debug
-nmap <leader>dc <Action>(ContextDebug)
-nmap <leader>dx <Action>(Debug)
-nmap <leader>db <Action>(ToggleLineBreakpoint)
-nmap <leader>de <Action>(EditBreakpoint)
-nmap <leader>dv <Action>(ViewBreakpoints)
-
 " refactor
-nmap <leader>cr <Action>(RenameElement)
 nmap <leader>re <Action>(Refactorings.QuickListPopupAction)
-nmap <leader>uw <Action>(Unwrap)
+vmap <leader>re <Action>(Refactorings.QuickListPopupAction)
+nmap <leader>uw <action>(unwrap)
 nmap <leader>sw <Action>(SurroundWith)
 nmap <leader>sd <Action>(SafeDelete)
+vmap <leader>rf <Action>(RenameElement)
 
 " hierarchy
 nmap <leader>hc <Action>(CallHierarchy)
