@@ -22,7 +22,7 @@ nmap <leader>wk <Action>(StretchSplitToTop)
 nmap <leader>wj <Action>(StretchSplitToBottom)
 nmap <leader>wh <Action>(StretchSplitToLeft)
 nmap <leader>wl <Action>(StretchSplitToRight)
-nmap <leader>wm <Action>(MaximizeEditorInSplit)  " overrides lazy.vim's toggle maximize
+nmap <leader>wm <Action>(MaximizeEditorInSplit)
 nmap <leader>wu <Action>(UnsplitAll)
 
 " menu (unique mappings)
