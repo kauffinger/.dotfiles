@@ -1,0 +1,10 @@
+window-decoration = false
+window-padding-x = 4
+background-opacity = 0.8
+background-blur-radius = 10
+theme = catppuccin-mocha
+font-thicken = true
+font-family = MonoLisa Nerd Font Mono
+
+cursor-style = block
+shell-integration-features = no-cursor
