@@ -8,3 +8,6 @@ font-family = MonoLisa Nerd Font Mono
 
 cursor-style = block
 shell-integration-features = no-cursor
+
+adjust-cell-height = 40%
+adjust-cursor-height = 40%
