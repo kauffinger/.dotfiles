@@ -2,7 +2,7 @@ window-decoration = false
 window-padding-x = 4
 background-opacity = 0.8
 background-blur-radius = 10
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 font-thicken = true
 font-family = MonoLisa Nerd Font Mono
 
